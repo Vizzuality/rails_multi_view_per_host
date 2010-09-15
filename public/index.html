@@ -1,0 +1,8 @@
+<h1>Rails Multiview per Host</h1>
+
+<ul>
+  <% AVAILABLE_HOSTS.each do |host| %>
+    <li><%= link_to("http://#{host}/site/home", "http://#{host}/site/home") %>
+    <li><%= link_to("http://#{host}/site/about", "http://#{host}/site/about") %>
+  <% end %>
+</ul>
